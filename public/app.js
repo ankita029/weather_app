@@ -53,12 +53,12 @@ app.get('',(req,res)=>{
             name:"Ankita swarnkar"
         })
 })
-app.get('/about/hbs',(req,res)=>{
-    res.render('about',{
-        title:"ABOUT PAGE",
-        name:"Ankita is a good girl !"
-    })
-})
+// app.get('/about/hbs',(req,res)=>{
+//     res.render('about',{
+//         title:"ABOUT PAGE",
+//         name:"Ankita is a good girl !"
+//     })
+// })
 
 app.get('/',(req,res)=>{
     res.send("YOUR /page")
