@@ -5,7 +5,7 @@ const hbs = require('hbs')
 const weather = require('../public/js/weather')
 
 const app = express();
-const port = 8000;
+const port = process.env.PORT||8000;
 
 //defines engine path
 const pathDirectory = path.join(__dirname,'../public');
