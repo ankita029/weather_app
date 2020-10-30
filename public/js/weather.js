@@ -10,10 +10,11 @@ const weather = (place,callback) => {
             callback('Please provide a valid location!',undefined)
         }
         else{
-            callback(undefined,`${res.body.current.weather_descriptions[0]} Temperature is ${res.body.current.temperature} degrees but feels like ${res.body.current.feelslike}degree`)
+            callback(undefined,`${res.body.current.weather_descriptions[0]} It is currently ${res.body.current.temperature} degrees out. It feels like ${res.body.current.feelslike} degrees out. The humidity is ${res.body.current.humidity} & precipitation is ${res.body.current.precip}`)
         }
 
 
         }
      )}
+    
 module.exports = weather;

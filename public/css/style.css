@@ -1,9 +1,17 @@
 body{
-    color: #1a1818;
-    font-family: Arial;
+    color: #333333;
+    font-family: arial;
     max-width: 650px;
     margin: 0 auto;
     padding: 0 16;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+
+.main-content {
+    flex-grow: 1;
 }
 
 header{
@@ -20,7 +28,8 @@ footer{
     font: 100;
     font-family: sans-serif;
     margin-top: 16px;
-    padding: 16px;
+    padding: 16px 0;
+    border-top: 1px solid #eeeeee;
 }
 
 header a{
@@ -45,3 +54,4 @@ button{
     color: white;
     padding: 8px;
 }
+
